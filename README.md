@@ -1,19 +1,19 @@
 
-# Portifólio
+# Portifolio
 
-Portifólio criado para apresentar meus projetos e habilidades e realizações de forma organizada e visualmente atraente.
-
-
-## Demonstração
-
-<a href="https://felipesoarws.vercel.app/">Acesse aqui</a>
+Portfolio created to present my projects, skills and achievements in an organized and visually appealing way.
 
 
-## 🚀 Sobre mim
-Eu sou um desenvolvedor com foco na área front-end e com habilidades e conhecimentos em HTML, s(CSS), JavaScript, React e Tailwind, além de estar atualmente aprofundando os conhecimentos em TypeScript e Node. 
+## Demonstration
+
+<a href="https://felipesoarws.vercel.app/">Check here</a>
 
 
-## Stack utilizada
+## 🚀 About me
+I am a developer focused on the front-end area and with skills and knowledge in HTML, s(CSS), JavaScript, React and Tailwind, in addition to currently deepening my knowledge in TypeScript and Node.
+
+
+## Stack used
 
 **Front-end:** React, TalwindCSS, JavaScript
 
