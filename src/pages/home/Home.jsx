@@ -117,7 +117,11 @@ const Home = () => {
               </a>
             </div>
 
-            <a href="./curriculo.pdf" target="_blank">
+            <a
+              href={`./pdf/curriculo.pdf`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button className="cursor-pointer flex items-center transition-all duration-[.3s] ease-in-out scale-1  border border-[#f5f4f4] gap-2 py-1.5 px-4 rounded-[.5rem] lg:py-[.4vw] lg:px-[.8vw] lg:rounded-[.5vw] lg:gap-[.5vw] hover:bg-[#1d1d1d]">
                 {language === "BR" ? (
                   <span className="neue-med text-[#f5f4f4] lg:text-[1vw]">
