@@ -45,7 +45,7 @@ const Header = ({ path, setLang }) => {
           <li
             className={`${
               path === "home" ? "neue-bold" : "neue-reg"
-            } text-[#f5f4f4] lg:text-[1.3vw] transition-all duration-[.3s] ease-in-out hover:text-[#7e7e7e]`}
+            } text-[#f5f4f4] lg:text-[1.2vw] transition-all duration-[.3s] ease-in-out hover:text-[#7e7e7e]`}
           >
             {language === "BR" ? (
               <Link to={"/"}>ínicio</Link>
@@ -56,7 +56,7 @@ const Header = ({ path, setLang }) => {
           <li
             className={`${
               path === "projects" ? "neue-bold" : "neue-reg"
-            } text-[#f5f4f4] lg:text-[1.3vw] transition-all duration-[.3s] ease-in-out hover:text-[#7e7e7e]`}
+            } text-[#f5f4f4] lg:text-[1.2vw] transition-all duration-[.3s] ease-in-out hover:text-[#7e7e7e]`}
           >
             {language === "BR" ? (
               <Link to={"/projects"}>projetos</Link>
@@ -67,7 +67,7 @@ const Header = ({ path, setLang }) => {
           <li
             className={`${
               path === "contact" ? "neue-bold" : "neue-reg"
-            } text-[#f5f4f4] lg:text-[1.3vw] transition-all duration-[.3s] ease-in-out hover:text-[#7e7e7e]`}
+            } text-[#f5f4f4] lg:text-[1.2vw] transition-all duration-[.3s] ease-in-out hover:text-[#7e7e7e]`}
           >
             {language === "BR" ? (
               <Link to={"/contact"}>contato</Link>

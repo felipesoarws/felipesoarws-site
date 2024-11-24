@@ -1,0 +1,26 @@
+[
+  {
+    "icon": "html",
+    "name": "HTML"
+  },
+  {
+    "icon": "css",
+    "name": "CSS"
+  },
+  {
+    "icon": "scss",
+    "name": "SCSS"
+  },
+  {
+    "icon": "javascript",
+    "name": "JavaScript"
+  },
+  {
+    "icon": "react",
+    "name": "React"
+  },
+  {
+    "icon": "tailwind",
+    "name": "Tailwind CSS"
+  }
+]
