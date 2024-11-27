@@ -22,14 +22,14 @@ const Projects = ({ lang }) => {
   };
 
   return (
-    <div className="my-4 lg:my-[2.5vw]">
+    <div className="my-4 lg:my-[2.2vw]">
       <div>
         {lang === "BR" ? (
-          <h1 className="neue-bold text-[#f5f4f4] text-[1.2rem] lg:text-[1.3vw]">
+          <h1 className="font-bold text-[#f5f4f4] text-[1.2rem] lg:text-[1.3vw]">
             projetos recentes
           </h1>
         ) : (
-          <h1 className="neue-bold text-[#f5f4f4] text-[1.2rem] lg:text-[1.3vw]">
+          <h1 className="font-bold text-[#f5f4f4] text-[1.2rem] lg:text-[1.3vw]">
             recents projects
           </h1>
         )}

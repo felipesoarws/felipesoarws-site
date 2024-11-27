@@ -8,25 +8,25 @@ import { RiTailwindCssFill } from "react-icons/ri";
 
 const Technologies = ({ lang }) => {
   return (
-    <div className="lg:my-[2.5vw]">
+    <div className="lg:my-[2.2vw]">
       <div>
         {lang === "BR" ? (
-          <h1 className="neue-bold text-[#f5f4f4] text-[1.2rem] lg:text-[1.3vw]">
+          <h1 className="font-bold text-[#f5f4f4] text-[1.2rem] lg:text-[1.3vw]">
             tecnologias
           </h1>
         ) : (
-          <h1 className="neue-bold text-[#f5f4f4] text-[1.2rem] lg:text-[1.3vw]">
+          <h1 className="font-bold text-[#f5f4f4] text-[1.2rem] lg:text-[1.3vw]">
             technologies
           </h1>
         )}
       </div>
-      <div className="my-4 lg:my-[.8vw] flex items-center justify-start flex-wrap gap-3 lg:gap-[1.8vw]">
+      <div className="my-4 lg:my-[.8vw] flex items-center justify-start flex-wrap gap-2 lg:gap-[1.2vw]">
         {technologies.map((tech, id) => (
           <div
             className="flex items-center justify-center flex-col gap-1 lg:gap-[.5vw] transition-all duration-[.3s] ease-in-out scale-1 hover:scale-105"
             key={id}
           >
-            <IconComponent iconName={tech.icon} color="#f5f4f4" size={40} />
+            <IconComponent iconName={tech.icon} color="#f5f4f4" size={38} />
             <span className="neue-reg text-[#a5a4a7] text-[.7rem] lg:text-[.8vw] ">
               {tech.name}
             </span>
