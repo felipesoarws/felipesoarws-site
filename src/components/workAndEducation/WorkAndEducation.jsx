@@ -7,7 +7,7 @@ const WorkAndEducation = ({ lang }) => {
   const [focusSection, setFocusSection] = useState();
 
   useEffect(() => {
-    setFocusSection("work");
+    setFocusSection("education");
   }, []);
 
   const openSection = (e) => {
@@ -21,28 +21,8 @@ const WorkAndEducation = ({ lang }) => {
   };
 
   return (
-    <div className="flex flex-col my-8 lg:my-[2.5vw]">
+    <div className="flex flex-col my-8 lg:my-[2vw]">
       <div className="flex items-center justify-center bg-[#ffffff1a] gap-[.3rem] px-[.3rem] py-[.2rem] rounded-[.6rem] lg:gap-[.3vw] lg:px-[.3vw] lg:py-[.2vw] lg:rounded-[.4vw]">
-        {lang === "BR" ? (
-          <button
-            className={`${
-              focusSection === "work" ? "bg-[#111111]" : ""
-            } w-[50%] font-bold text-[#f5f4f4] py-[.2rem] rounded-[.6rem] text-[.8rem] lg:py-[.2vw] lg:rounded-[.4vw] lg:text-[.9vw] transition-all duration-[.3s] ease-in-out`}
-            onClick={(e) => openSection(e)}
-          >
-            Experiências
-          </button>
-        ) : (
-          <button
-            className={`${
-              focusSection === "work" ? "bg-[#111111]" : ""
-            } w-[50%] font-bold text-[#f5f4f4] py-[.2rem] rounded-[.6rem] text-[.8rem] lg:py-[.2vw] lg:rounded-[.4vw] lg:text-[.9vw] transition-all duration-[.3s] ease-in-out`}
-            onClick={(e) => openSection(e)}
-          >
-            Work
-          </button>
-        )}
-
         {lang === "BR" ? (
           <button
             className={`${
@@ -60,6 +40,26 @@ const WorkAndEducation = ({ lang }) => {
             onClick={(e) => openSection(e)}
           >
             Education
+          </button>
+        )}
+
+        {lang === "BR" ? (
+          <button
+            className={`${
+              focusSection === "work" ? "bg-[#111111]" : ""
+            } w-[50%] font-bold text-[#f5f4f4] py-[.2rem] rounded-[.6rem] text-[.8rem] lg:py-[.2vw] lg:rounded-[.4vw] lg:text-[.9vw] transition-all duration-[.3s] ease-in-out`}
+            onClick={(e) => openSection(e)}
+          >
+            Experiências
+          </button>
+        ) : (
+          <button
+            className={`${
+              focusSection === "work" ? "bg-[#111111]" : ""
+            } w-[50%] font-bold text-[#f5f4f4] py-[.2rem] rounded-[.6rem] text-[.8rem] lg:py-[.2vw] lg:rounded-[.4vw] lg:text-[.9vw] transition-all duration-[.3s] ease-in-out`}
+            onClick={(e) => openSection(e)}
+          >
+            Work
           </button>
         )}
       </div>

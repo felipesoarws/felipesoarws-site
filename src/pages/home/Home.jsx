@@ -28,8 +28,8 @@ const Home = () => {
         <main className="my-8 lg:my-[3.7vw]">
           <AboutMe lang={language} />
           <Technologies lang={language} />
-          <WorkAndEducation lang={language} />
           <Projects lang={language} />
+          <WorkAndEducation lang={language} />
         </main>
         <Footer />
       </div>

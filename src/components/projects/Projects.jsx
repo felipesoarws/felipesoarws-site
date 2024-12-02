@@ -22,7 +22,7 @@ const Projects = ({ lang }) => {
   };
 
   return (
-    <div className="my-4 lg:my-[2.2vw]">
+    <div className="my-4 lg:my-[2vw]">
       <div>
         {lang === "BR" ? (
           <h1 className="font-bold text-[#f5f4f4] text-[1.2rem] lg:text-[1.3vw]">
