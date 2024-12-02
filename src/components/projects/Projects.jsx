@@ -1,7 +1,15 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import Slider from "react-slick";
 import projects from "../../data/projects.json";
 
 const Projects = ({ lang }) => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   const recentProjects = projects.sort((a, b) => b.id - a.id);
 
   var settings = {
@@ -22,7 +30,11 @@ const Projects = ({ lang }) => {
   };
 
   return (
-    <div className="my-4 lg:my-[2vw]">
+    <div
+      className="my-4 lg:my-[2vw]"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
       <div>
         {lang === "BR" ? (
           <h1 className="font-bold text-[#f5f4f4] text-[1.2rem] lg:text-[1.3vw]">

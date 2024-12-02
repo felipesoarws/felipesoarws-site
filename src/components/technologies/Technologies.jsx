@@ -1,3 +1,7 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 // data
 import technologies from "../../data/technologies.json";
 
@@ -7,8 +11,12 @@ import { FaHtml5, FaCss3Alt, FaReact, FaJs } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 
 const Technologies = ({ lang }) => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <div className="lg:my-[2vw]">
+    <div className="lg:my-[2vw]" data-aos="fade-up" data-aos-duration="2000">
       <div>
         {lang === "BR" ? (
           <h1 className="font-bold text-[#f5f4f4] text-[1.2rem] lg:text-[1.3vw]">

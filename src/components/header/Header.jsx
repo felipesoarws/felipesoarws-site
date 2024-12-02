@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
+import AOS from "aos";
 import { useState, useRef, useEffect } from "react";
 import euaIcon from "../../assets/images/eua_icon.png";
 import braIcon from "../../assets/images/bra_icon.png";
 import "../../styles/fonts.css";
+import "aos/dist/aos.css";
 
 const Header = ({ path, setLang }) => {
   const langBRRef = useRef();
@@ -10,6 +12,7 @@ const Header = ({ path, setLang }) => {
   const [language, setLanguage] = useState("");
 
   useEffect(() => {
+    AOS.init();
     const savedLang = localStorage.getItem("language");
     if (savedLang) {
       setLanguage(savedLang);
@@ -80,7 +83,7 @@ const Header = ({ path, setLang }) => {
           </li>
         </ul>
       </nav> */}
-      <div>
+      <div data-aos="fade-down" data-aos-duration="1900">
         <img
           src={euaIcon}
           className={`${

@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import works from "../../data/works.json";
 import education from "../../data/education.json";
@@ -7,6 +9,7 @@ const WorkAndEducation = ({ lang }) => {
   const [focusSection, setFocusSection] = useState();
 
   useEffect(() => {
+    AOS.init();
     setFocusSection("education");
   }, []);
 
@@ -64,7 +67,11 @@ const WorkAndEducation = ({ lang }) => {
         )}
       </div>
       <div className="border border-[#1d1d1d] px-[.5rem] rounded-[.6rem] my-[.8rem] lg:px-[.5vw] lg:rounded-[.4vw] lg:my-[.8vw]">
-        <div className="ml-10 border-l border-[#1d1d1d] flex flex-col lg:gap-[.8vw]">
+        <div
+          className="ml-10 border-l border-[#1d1d1d] flex flex-col lg:gap-[.8vw]"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           {focusSection === "work"
             ? works.map((work, id) => (
                 <Section
