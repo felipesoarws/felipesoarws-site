@@ -35,13 +35,13 @@ const AboutMe = ({ lang }) => {
 
           {lang === "BR" ? (
             <p className="neue-reg text-[#a5a4a7] text-[.9rem] lg:text-[1.1vw]">
-              um desenvolvedor frontend de {age} anos, comprometido com a
-              criação de interfaces de usuário inovadoras e eficientes.
+              um desenvolvedor frontend de {age} anos, criador de interfaces de
+              usuário inovadoras e eficientes.
             </p>
           ) : (
             <p className="neue-reg text-[#a5a4a7] text-[.9rem] lg:text-[1.1vw]">
-              a {age}-year-old frontend developer commited to creating
-              innovative and efficient user inferfaces.
+              a {age}-year-old frontend developer creator of innovative and
+              efficient user interfaces.
             </p>
           )}
 
