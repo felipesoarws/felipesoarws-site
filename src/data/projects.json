@@ -74,6 +74,18 @@
   {
     "id": 7,
     "builtYear": 2024,
+    "projectName": "@felipesoarws (v1)",
+    "builtWith": ["React", "SCSS", "Figma"],
+    "projectDescBR": "Meu antigo portifólio criado para inserir meus projetos, skills e seção de contato.",
+    "projectDescEN": "My old portfolio created to insert my projects, skills and contact section.",
+    "mobileBackground": "/projects/portifolio_felp_mobile.png",
+    "desktopBackground": "/projects/portifolio_felp_desktop.png",
+    "repository": "https://github.com/felipesoarws/my-site",
+    "projectLink": "https://felipesoarws-old.vercel.app/"
+  },
+  {
+    "id": 8,
+    "builtYear": 2024,
     "projectName": "Gabrielle Silva",
     "builtWith": ["React", "TailwindCSS", "Figma"],
     "projectDescBR": "Portifólio criado para Gabrielle Silva, diretora de arte e fotógrafa.",
