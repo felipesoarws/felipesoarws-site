@@ -42,8 +42,8 @@ const Header = ({ path, setLang }) => {
   };
 
   return (
-    <header className="fixed bg-[rgba(17,17,17,0.62)] flex justify-between backdrop-blur-[8.6px] border rounded-2xl border-solid border-[rgba(17,17,17,0.3)] z-[1000] top-0 w-[100%] py-[1.2rem] px-[2rem] translate-x-[-1.7rem] lg:w-[45vw] lg:translate-x-[-1.7vw] lg:py-[1.2vw] lg:px-[2vw] ">
-      <nav>
+    <header className="fixed bg-[rgba(17,17,17,0.62)] flex flex-row-reverse justify-between backdrop-blur-[8.6px] border rounded-2xl border-solid border-[rgba(17,17,17,0.3)] z-[1000] top-0 w-[100%] py-[1.2rem] px-[2rem] translate-x-[-1.7rem] lg:w-[45vw] lg:translate-x-[-1.7vw] lg:py-[1.2vw] lg:px-[2vw] ">
+      {/*   <nav>
         <ul className="flex gap-6 lg:gap-[2.5vw]">
           <li
             className={`${
@@ -79,7 +79,7 @@ const Header = ({ path, setLang }) => {
             )}
           </li>
         </ul>
-      </nav>
+      </nav> */}
       <div>
         <img
           src={euaIcon}

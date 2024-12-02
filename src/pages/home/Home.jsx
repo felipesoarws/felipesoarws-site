@@ -7,6 +7,7 @@ import AboutMe from "../../components/aboutMe/AboutMe";
 import Projects from "../../components/projects/Projects";
 import Technologies from "../../components/technologies/Technologies";
 import WorkAndEducation from "../../components/workAndEducation/WorkAndEducation";
+import Footer from "../../components/footer/Footer";
 
 const Home = () => {
   const [language, setLanguage] = useState("");
@@ -30,6 +31,7 @@ const Home = () => {
           <WorkAndEducation lang={language} />
           <Projects lang={language} />
         </main>
+        <Footer />
       </div>
     </div>
   );
