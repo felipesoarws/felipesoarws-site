@@ -8,11 +8,7 @@ import AllProjects from "./pages/allProjects/AllProjects";
 
 function App() {
   useEffect(() => {
-    const tagManagerArgs = {
-      gtmId: "GTM-KC3RGBLM",
-    };
-
-    TagManager.initialize(tagManagerArgs);
+    TagManager.initialize({ gtmId: "GTM-KC3RGBLM" });
   }, []);
 
   return (
