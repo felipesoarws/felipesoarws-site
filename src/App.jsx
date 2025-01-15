@@ -1,10 +1,20 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import TagManager from "react-gtm-module";
+import { useEffect } from "react";
 
 import Home from "./pages/home/Home";
 import NotFound from "./pages/notFound/NotFound";
 import AllProjects from "./pages/allProjects/AllProjects";
 
 function App() {
+  useEffect(() => {
+    const tagManagerArgs = {
+      gtmId: "GTM-KC3RGBLM",
+    };
+
+    TagManager.initialize(tagManagerArgs);
+  }, []);
+
   return (
     <Router>
       <Routes>
