@@ -94,5 +94,17 @@
     "desktopBackground": "/projects/portifolio_gabrielle_desktop.png",
     "repository": "https://github.com/felipesoarws/portifolio-gabrielle-silva",
     "projectLink": "https://gabriellesilva.vercel.app/"
+  },
+   {
+    "id": 9,
+    "builtYear": 2025,
+    "projectName": "Starky",
+    "builtWith": ["React", "TailwindCSS", "Figma"],
+    "projectDescBR": "Aplicativo para estudos baseado em flashcards.",
+    "projectDescEN": "Study application based in flashcards.",
+    "mobileBackground": "/projects/starky_desktop.png",
+    "desktopBackground": "/projects/starky_desktop.png",
+    "repository": "https://github.com/felipesoarws/Starky",
+    "projectLink": "https://starky.vercel.app/"
   }
 ]
