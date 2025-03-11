@@ -2,18 +2,6 @@
   {
     "id": 1,
     "builtYear": 2022,
-    "projectName": "ToDo",
-    "builtWith": ["HTML", "JavaScript", "SCSS"],
-    "projectDescBR": "Projeto de criar tafefas, com opção de selecionar as ja feitas e deletar.",
-    "projectDescEN": "Project to create tasks, with the option to select those already done and delete.",
-    "mobileBackground": "/projects/todo_mobile.png",
-    "desktopBackground": "/projects/todo_desktop.png",
-    "repository": "",
-    "projectLink": "https://to-do-app-blue.vercel.app/"
-  },
-  {
-    "id": 2,
-    "builtYear": 2022,
     "projectName": "Valorant Hub",
     "builtWith": ["React", "SCSS", "API"],
     "projectDescBR": "Um website de Valorant, com agentes, características, ranks e mapas.",
@@ -24,7 +12,7 @@
     "projectLink": "https://vlrgg.vercel.app"
   },
   {
-    "id": 3,
+    "id": 2,
     "builtYear": 2023,
     "projectName": "Google Keep",
     "builtWith": ["React", "SCSS"],
@@ -36,7 +24,7 @@
     "projectLink": "https://google-keep-clone-dev.vercel.app"
   },
   {
-    "id": 4,
+    "id": 3,
     "builtYear": 2023,
     "projectName": "German Audio",
     "builtWith": ["goDaddy", "HTML", "CSS"],
@@ -48,7 +36,7 @@
     "projectLink": "https://germanaudio.com.br/"
   },
   {
-    "id": 5,
+    "id": 4,
     "builtYear": 2024,
     "projectName": "Simulador do Brasileirão",
     "builtWith": ["React", "SCSS"],
@@ -60,7 +48,7 @@
     "projectLink": "https://brasileirao-simulador.vercel.app/"
   },
   {
-    "id": 6,
+    "id": 5,
     "builtYear": 2024,
     "projectName": "Dunder Mifflin",
     "builtWith": ["React", "TailwindCSS", "Figma"],
@@ -72,7 +60,7 @@
     "projectLink": "https://thedundermifflin.vercel.app/"
   },
   {
-    "id": 7,
+    "id": 6,
     "builtYear": 2024,
     "projectName": "@felipesoarws (v1)",
     "builtWith": ["React", "SCSS", "Figma"],
@@ -84,7 +72,7 @@
     "projectLink": "https://felipesoarws-old.vercel.app/"
   },
   {
-    "id": 8,
+    "id": 7,
     "builtYear": 2024,
     "projectName": "Gabrielle Silva",
     "builtWith": ["React", "TailwindCSS", "Figma"],
@@ -96,7 +84,7 @@
     "projectLink": "https://gabriellesilva.vercel.app/"
   },
   {
-    "id": 9,
+    "id": 8,
     "builtYear": 2025,
     "projectName": "Starky",
     "builtWith": ["React", "TailwindCSS", "Figma"],
