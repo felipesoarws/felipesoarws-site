@@ -16,11 +16,19 @@
     "name": "JavaScript"
   },
   {
+    "icon": "typescript",
+    "name": "TypeScript"
+  },
+  {
+    "icon": "reactnative",
+    "name": "React Native"
+  },
+  {
     "icon": "react",
     "name": "React"
   },
   {
     "icon": "tailwind",
-    "name": "Tailwind CSS"
+    "name": "Tailwind"
   }
 ]

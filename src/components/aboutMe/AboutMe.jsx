@@ -1,4 +1,7 @@
 import { useEffect, useState } from "react";
+import PropTypes from "prop-types";
+
+// aos
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -42,7 +45,7 @@ const AboutMe = ({ lang }) => {
               data-aos="fade-up"
               data-aos-duration="1800"
             >
-              Hi, I'm Felipe, &#128075;
+              Hi, I&apos;m Felipe, &#128075;
             </h1>
           )}
 
@@ -171,3 +174,7 @@ const AboutMe = ({ lang }) => {
 };
 
 export default AboutMe;
+
+AboutMe.propTypes = {
+  lang: PropTypes.string.isRequired,
+};

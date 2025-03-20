@@ -1,4 +1,7 @@
 import { useEffect } from "react";
+import PropTypes from "prop-types";
+
+// aos
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -13,9 +16,11 @@ import {
   SiGoogletagmanager,
   SiSass,
 } from "react-icons/si";
-import { FaHtml5, FaCss3Alt, FaReact, FaJs, FaTiktok } from "react-icons/fa";
-import { RiTailwindCssFill } from "react-icons/ri";
+import { FaHtml5, FaCss3Alt, FaReact, FaTiktok } from "react-icons/fa";
+import { RiJavascriptFill, RiTailwindCssFill } from "react-icons/ri";
 import { FaMeta } from "react-icons/fa6";
+import { IoMdPhonePortrait } from "react-icons/io";
+import { BiLogoTypescript } from "react-icons/bi";
 
 const Technologies = ({ lang }) => {
   useEffect(() => {
@@ -39,11 +44,11 @@ const Technologies = ({ lang }) => {
         <div className="my-4 lg:my-[.8vw] flex items-center justify-start flex-wrap gap-2 lg:gap-[1.6vw]">
           {technologies.map((tech, id) => (
             <div
-              className="flex items-center justify-center flex-col gap-1 lg:gap-[.5vw] transition-all duration-[.3s] ease-in-out scale-1 hover:scale-105"
+              className="flex items-center justify-center flex-col gap-1 lg:gap-[.3vw] transition-all duration-[.3s] ease-in-out scale-1 hover:scale-105"
               key={id}
             >
               <IconComponent iconName={tech.icon} color="#f5f4f4" size={32} />
-              <span className="neue-reg text-[#a5a4a7] text-[.7rem] lg:text-[1vw] ">
+              <span className="neue-reg text-[#a5a4a7] text-[.7rem] lg:text-[.8vw] ">
                 {tech.name}
               </span>
             </div>
@@ -68,7 +73,7 @@ const Technologies = ({ lang }) => {
               className="flex items-center justify-center flex-col gap-1 lg:gap-[.5vw] transition-all duration-[.3s] ease-in-out scale-100 hover:scale-105"
               key={id}
             >
-              <IconComponent iconName={tech.icon} color="#f5f4f450" size={25} />
+              <IconComponent iconName={tech.icon} color="#f5f4f450" size={24} />
               <span
                 className="neue-reg text-[#a5a4a7] text-[.7rem] lg:text-[.
               7vw] "
@@ -83,6 +88,10 @@ const Technologies = ({ lang }) => {
   );
 };
 
+Technologies.propTypes = {
+  lang: PropTypes.string.isRequired,
+};
+
 export default Technologies;
 
 const IconComponent = ({ iconName, color, size }) => {
@@ -90,8 +99,10 @@ const IconComponent = ({ iconName, color, size }) => {
     html: FaHtml5,
     css: FaCss3Alt,
     react: FaReact,
+    reactnative: IoMdPhonePortrait,
+    typescript: BiLogoTypescript,
     tailwind: RiTailwindCssFill,
-    javascript: FaJs,
+    javascript: RiJavascriptFill,
     scss: SiSass,
     meta: FaMeta,
     google: SiGoogleads,
@@ -107,4 +118,10 @@ const IconComponent = ({ iconName, color, size }) => {
   }
 
   return <Icon color={color} size={size} />;
+};
+
+IconComponent.propTypes = {
+  iconName: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
+  size: PropTypes.number.isRequired,
 };

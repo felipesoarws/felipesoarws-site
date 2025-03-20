@@ -1,4 +1,7 @@
+import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
+
+// styles
 import "../../styles/fonts.css";
 
 // data
@@ -98,4 +101,11 @@ const ProjectItem = ({ cover, title, desc, stacks }) => {
       </div>
     </div>
   );
+};
+
+ProjectItem.propTypes = {
+  cover: PropTypes.any.isRequired,
+  title: PropTypes.string.isRequired,
+  desc: PropTypes.string.isRequired,
+  stacks: PropTypes.array.isRequired,
 };

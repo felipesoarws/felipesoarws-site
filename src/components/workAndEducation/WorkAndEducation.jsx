@@ -1,7 +1,11 @@
 import { useEffect, useState } from "react";
+import PropTypes from "prop-types";
+
+// aos
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+// data
 import works from "../../data/works.json";
 import education from "../../data/education.json";
 
@@ -109,6 +113,10 @@ const WorkAndEducation = ({ lang }) => {
   );
 };
 
+WorkAndEducation.propTypes = {
+  lang: PropTypes.string.isRequired,
+};
+
 export default WorkAndEducation;
 
 const Section = ({
@@ -184,4 +192,17 @@ const Section = ({
       </div>
     </div>
   );
+};
+
+Section.propTypes = {
+  lang: PropTypes.string.isRequired,
+  companyLogo: PropTypes.any.isRequired,
+  periodBR: PropTypes.string.isRequired,
+  companyNameBR: PropTypes.string.isRequired,
+  positionBR: PropTypes.string.isRequired,
+  functionsBR: PropTypes.array.isRequired,
+  periodEN: PropTypes.string.isRequired,
+  companyNameEN: PropTypes.string.isRequired,
+  positionEN: PropTypes.string.isRequired,
+  functionsEN: PropTypes.array.isRequired,
 };

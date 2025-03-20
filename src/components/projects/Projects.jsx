@@ -1,9 +1,15 @@
 import { useEffect, useState } from "react";
+import PropTypes from "prop-types";
+import Slider from "react-slick";
+
+// aos
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import Slider from "react-slick";
+//data
 import projects from "../../data/projects.json";
+
+// icon
 import { LuGithub } from "react-icons/lu";
 
 const Projects = ({ lang }) => {
@@ -96,16 +102,25 @@ const Projects = ({ lang }) => {
   );
 };
 
+Projects.propTypes = {
+  lang: PropTypes.string.isRequired,
+};
+
 export default Projects;
 
 const ProjectItem = ({ cover, title, desc, repo, stacks, year }) => {
   return (
     <div className="relative border border-[#1d1d1d] rounded-md p-3 lg:rounded-[.6vw] lg:p-[.6vw] lg:w-[20vw]">
-      <a href={repo} target="_blank" className="z-55">
-        <div className="bg-[#1d1d1d] transition-all duration-[.3s] ease-in-out scale-100  absolute flex items-center justify-center rounded-full top-4 right-4 p-3 lg:top-[1vw] lg:right-[1vw] lg:p-[.5vw] hover:scale-110">
-          <LuGithub color="#f5f4f4" size={20} />
-        </div>
-      </a>
+      {!repo ? (
+        <></>
+      ) : (
+        <a href={repo} target="_blank" className="z-55">
+          <div className="bg-[#1d1d1d] transition-all duration-[.3s] ease-in-out scale-100  absolute flex items-center justify-center rounded-full top-4 right-4 p-3 lg:top-[1vw] lg:right-[1vw] lg:p-[.5vw] hover:scale-110">
+            <LuGithub color="#f5f4f4" size={20} />
+          </div>
+        </a>
+      )}
+
       <div>
         <img
           src={cover}
@@ -136,4 +151,13 @@ const ProjectItem = ({ cover, title, desc, repo, stacks, year }) => {
       </span>
     </div>
   );
+};
+
+ProjectItem.propTypes = {
+  cover: PropTypes.any.isRequired,
+  title: PropTypes.string.isRequired,
+  desc: PropTypes.string.isRequired,
+  repo: PropTypes.string.isRequired,
+  stacks: PropTypes.array.isRequired,
+  year: PropTypes.number.isRequired,
 };

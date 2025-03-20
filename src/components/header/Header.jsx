@@ -1,12 +1,18 @@
-import { Link } from "react-router-dom";
-import AOS from "aos";
 import { useState, useRef, useEffect } from "react";
+import { PropTypes } from "prop-types";
+
+// images
 import euaIcon from "../../assets/images/eua_icon.png";
 import braIcon from "../../assets/images/bra_icon.png";
+
+// style
 import "../../styles/fonts.css";
+
+// aos
+import AOS from "aos";
 import "aos/dist/aos.css";
 
-const Header = ({ path, setLang }) => {
+const Header = ({ setLang }) => {
   const langBRRef = useRef();
   const langENRef = useRef();
   const [language, setLanguage] = useState("");
@@ -109,3 +115,7 @@ const Header = ({ path, setLang }) => {
 };
 
 export default Header;
+
+Header.propTypes = {
+  setLang: PropTypes.func.isRequired,
+};
