@@ -6,7 +6,7 @@ const NotFound = () => {
 
   useEffect(() => {
     navigate("/");
-  }, []);
+  });
 
   return <div>erro</div>;
 };
