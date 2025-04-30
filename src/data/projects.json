@@ -51,7 +51,7 @@
     "id": 5,
     "builtYear": 2024,
     "projectName": "Dunder Mifflin",
-    "builtWith": ["React", "TailwindCSS", "Figma"],
+    "builtWith": ["React", "Tailwind", "Figma"],
     "projectDescBR": "Landing Page da empresa Dunder Mifflin, inspirado da série The Office.",
     "projectDescEN": "Dunder Mifflin Landing Page, inspired by the series The Office.",
     "mobileBackground": "/projects/dundermifflin_mobile.png",
@@ -75,7 +75,7 @@
     "id": 7,
     "builtYear": 2024,
     "projectName": "Gabrielle Silva",
-    "builtWith": ["React", "TailwindCSS", "Figma"],
+    "builtWith": ["React", "Tailwind", "Figma"],
     "projectDescBR": "Portifólio criado para Gabrielle Silva, diretora de arte e fotógrafa.",
     "projectDescEN": "Portfolio created for Gabrielle Silva, art director and photographer.",
     "mobileBackground": "/projects/portifolio_gabrielle_mobile.png",
@@ -87,12 +87,24 @@
     "id": 8,
     "builtYear": 2025,
     "projectName": "Starky",
-    "builtWith": ["React", "TailwindCSS", "Figma"],
+    "builtWith": ["React", "Tailwind", "Figma"],
     "projectDescBR": "Aplicativo para estudos baseado em flashcards, com método de repetição espaçada.",
     "projectDescEN": "Study application based in flashcards, with spaced repetition method.",
     "mobileBackground": "/projects/starky_desktop.png",
     "desktopBackground": "/projects/starky_desktop.png",
     "repository": "https://github.com/felipesoarws/Starky",
     "projectLink": "https://starky.vercel.app/"
+  },
+  {
+    "id": 9,
+    "builtYear": 2025,
+    "projectName": "Bliss Sync",
+    "builtWith": ["TypeScript", "Tailwind", "Figma"],
+    "projectDescBR": "Bliss Sync é uma empresa que atua com conteúdo e comunicação para marcas do universo da moda.",
+    "projectDescEN": "Bliss Sync is a company that works with content and communication for brands in the fashion world.",
+    "mobileBackground": "/projects/blisssync_desktop.png",
+    "desktopBackground": "/projects/blisssync_desktop.png",
+    "repository": "https://github.com/felipesoarws/bliss-sync",
+    "projectLink": "https://blisssync.vercel.app/"
   }
 ]
