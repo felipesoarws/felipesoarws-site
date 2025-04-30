@@ -9,7 +9,7 @@ import "aos/dist/aos.css";
 import Me from "../../assets/images/profile.jpg";
 
 // icons
-import { Github, Mail, Linkedin, FileDown } from "lucide-react";
+import { Github, Mail, Linkedin, FileDown, Instagram } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 
 const AboutMe = ({ lang }) => {
@@ -90,6 +90,20 @@ const AboutMe = ({ lang }) => {
       </div>
       <div className="flex items-center justify-between gap-8 my-6 lg:gap-[2vw] lg:my-[1.2vw] lg:ml-[.5vw] lg:justify-start">
         <div className="flex items-center gap-3 lg:gap-[.8vw]">
+          <a
+            href="https://www.instagram.com/devf____/"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <Instagram
+              color="#f5f4f4"
+              size={23}
+              strokeWidth={1.5}
+              className="transition-all duration-[.3s] ease-in-out scale-1 hover:scale-110"
+            />
+          </a>
           <a
             href="https://www.linkedin.com/in/felipesoarws/"
             target="_blank"
