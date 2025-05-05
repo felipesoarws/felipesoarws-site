@@ -1,5 +1,9 @@
 import { useState, useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { PropTypes } from "prop-types";
+
+// icons
+import { IoIosArrowBack } from "react-icons/io";
 
 // images
 import euaIcon from "../../assets/images/eua_icon.png";
@@ -12,7 +16,7 @@ import "../../styles/fonts.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const Header = ({ setLang }) => {
+const Header = ({ path, setLang }) => {
   const langBRRef = useRef();
   const langENRef = useRef();
   const [language, setLanguage] = useState("");
@@ -29,7 +33,6 @@ const Header = ({ setLang }) => {
 
   const handleLanguage = (e) => {
     const lang = e.target.alt;
-    console.log(langBRRef);
 
     if (lang === "BR") {
       setLanguage("BR");
@@ -51,44 +54,22 @@ const Header = ({ setLang }) => {
   };
 
   return (
-    <header className="fixed bg-[rgba(17,17,17,0.62)] flex flex-row-reverse justify-between backdrop-blur-[8.6px] border rounded-2xl border-solid border-[rgba(17,17,17,0.3)] z-[1000] top-0 w-[100%] py-[1.2rem] px-[2rem] translate-x-[-1.7rem] lg:w-[45vw] lg:translate-x-[-1.7vw] lg:py-[1.2vw] lg:px-[2vw] ">
-      {/*   <nav>
-        <ul className="flex gap-6 lg:gap-[2.5vw]">
-          <li
-            className={`${
-              path === "home" ? "neue-bold" : "neue-reg"
-            } text-[#f5f4f4] lg:text-[1.2vw] transition-all duration-[.3s] ease-in-out hover:text-[#7e7e7e]`}
-          >
-            {language === "BR" ? (
-              <Link to={"/"}>ínicio</Link>
-            ) : (
-              <Link to={"/"}>home</Link>
-            )}
-          </li>
-          <li
-            className={`${
-              path === "projects" ? "neue-bold" : "neue-reg"
-            } text-[#f5f4f4] lg:text-[1.2vw] transition-all duration-[.3s] ease-in-out hover:text-[#7e7e7e]`}
-          >
-            {language === "BR" ? (
-              <Link to={"/projects"}>projetos</Link>
-            ) : (
-              <Link to={"/projects"}>projects</Link>
-            )}
-          </li>
-          <li
-            className={`${
-              path === "contact" ? "neue-bold" : "neue-reg"
-            } text-[#f5f4f4] lg:text-[1.2vw] transition-all duration-[.3s] ease-in-out hover:text-[#7e7e7e]`}
-          >
-            {language === "BR" ? (
-              <Link to={"/contact"}>contato</Link>
-            ) : (
-              <Link to={"/contact"}>contact</Link>
-            )}
+    <header className="fixed bg-[rgba(17,17,17,0.62)] flex flex-row justify-between backdrop-blur-[8.6px] border rounded-2xl border-solid border-[rgba(17,17,17,0.3)] z-[1000] top-0 w-[100%] py-[1.2rem] px-[2rem] translate-x-[-1.7rem] lg:w-[45vw] lg:translate-x-[-1.7vw] lg:py-[1.2vw] lg:px-[2vw] ">
+      <nav>
+        <ul data-aos="fade-down" data-aos-duration="1900">
+          <li className={`${path === "detailedProject" ? "block" : "hidden"} `}>
+            <Link to={"/"}>
+              {" "}
+              <IoIosArrowBack
+                color="#f5f4f4"
+                size={30}
+                strokeWidth={1.5}
+                className="transition-all duration-[.3s] ease-in-out scale-1 lg:translate-x-[-1vw] hover:scale-110"
+              />
+            </Link>
           </li>
         </ul>
-      </nav> */}
+      </nav>
       <div data-aos="fade-down" data-aos-duration="1900">
         <img
           src={euaIcon}

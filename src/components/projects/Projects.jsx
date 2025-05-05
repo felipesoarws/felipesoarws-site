@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import Slider from "react-slick";
 
@@ -63,11 +64,7 @@ const Projects = ({ lang }) => {
             {recentProjects.map((project, id) => (
               <div key={id} className="lg:translate-x-[.4vw]">
                 {lang === "BR" ? (
-                  <a
-                    href={project.projectLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <Link to={`/projetos/${project.projectSlug}`}>
                     <ProjectItem
                       cover={project.desktopBackground}
                       title={project.projectName}
@@ -76,13 +73,9 @@ const Projects = ({ lang }) => {
                       stacks={project.builtWith}
                       year={project.builtYear}
                     />
-                  </a>
+                  </Link>
                 ) : (
-                  <a
-                    href={project.projectLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <Link to={`/projetos/${project.projectSlug}`}>
                     <ProjectItem
                       cover={project.desktopBackground}
                       title={project.projectName}
@@ -91,7 +84,7 @@ const Projects = ({ lang }) => {
                       stacks={project.builtWith}
                       year={project.builtYear}
                     />
-                  </a>
+                  </Link>
                 )}
               </div>
             ))}
@@ -139,14 +132,14 @@ const ProjectItem = ({ cover, title, desc, repo, stacks, year }) => {
           {stacks.map((stack, id) => (
             <span
               key={id}
-              className="font-bold bg-[#f5f4f4] text-[#1d1d1d] py-[.1rem] px-[.4rem] rounded-md lg:py-[.1vw] lg:px-[.4vw] lg:rounded-[.5vw]"
+              className="font-bold bg-[#f5f4f4] text-[#362323] py-[.1rem] px-[.4rem] rounded-md lg:py-[.1vw] lg:px-[.4vw] lg:rounded-[.5vw]"
             >
               {stack}
             </span>
           ))}
         </div>
       </div>
-      <span className="absolute bottom-0 right-0 font-bold text-[#a5a4a710] py-[.1rem] px-[.4rem] lg:py-[.1vw] lg:px-[.4vw] lg:text-[2.5vw] lg:bottom-[-.8vw]">
+      <span className="absolute bottom-[-.5rem] right-0 font-bold text-[#a5a4a710] text-[2rem] py-[.1rem] px-[.4rem] lg:py-[.1vw] lg:px-[.4vw] lg:text-[2.5vw] lg:bottom-[-.8vw]">
         {year}
       </span>
     </div>

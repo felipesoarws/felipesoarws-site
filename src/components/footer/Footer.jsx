@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="flex flex-col gap-2 justify-between items-center lg:flex-row lg:gap-0">
       <div className="font-medium text-[#f5f4f4] text-[1rem] lg:text-[.9vw]">
-        © {year} felipesoarws
+        {year} © felipesoarws
       </div>
       <div className="flex items-center gap-[.8rem] lg:gap-[.8vw] ">
         <a
