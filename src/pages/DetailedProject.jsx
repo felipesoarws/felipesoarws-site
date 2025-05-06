@@ -132,7 +132,7 @@ const DetailedProject = () => {
                       {project.projectDetails[0]?.extrasLinks?.map(
                         (link, id) => (
                           <a
-                            className="block text-[1rem] lg:text-[1vw] italic text-[#a5a4a7]"
+                            className="block text-[.9rem] lg:text-[1vw] text-[#a5a4a7]"
                             target="_blank"
                             href={link}
                             key={id}
@@ -154,7 +154,7 @@ const DetailedProject = () => {
                     {language === "BR" ? (
                       <>
                         <h2
-                          className="font-bold text-[#f5f4f4] text-[.9rem] lg:text-[1.5vw]"
+                          className="font-bold text-[#f5f4f4] text-[1rem] lg:text-[1.5vw]"
                           data-aos="fade-up"
                           data-aos-duration="1500"
                         >
@@ -164,7 +164,7 @@ const DetailedProject = () => {
                           {project.builtWith.map((tech, id) => (
                             <span
                               key={id}
-                              className="block text-[#a5a4a7] text-[.9rem] lg:text-[1vw] "
+                              className="block text-[#a5a4a7] text-[.8rem] lg:text-[1vw] "
                               data-aos="fade-up"
                               data-aos-duration="1500"
                               data-aos-delay="500"
@@ -177,7 +177,7 @@ const DetailedProject = () => {
                     ) : (
                       <>
                         <h2
-                          className="font-bold text-[#f5f4f4] text-[.9rem] lg:text-[1.5vw]"
+                          className="font-bold text-[#f5f4f4] text-[1rem] lg:text-[1.5vw]"
                           data-aos="fade-up"
                           data-aos-duration="1500"
                         >
@@ -187,7 +187,7 @@ const DetailedProject = () => {
                           {project.builtWith.map((tech, id) => (
                             <span
                               key={id}
-                              className="block text-[#a5a4a7] text-[.9rem] lg:text-[1vw] "
+                              className="block text-[#a5a4a7] text-[.8rem] lg:text-[1vw] "
                               data-aos="fade-up"
                               data-aos-duration="1500"
                               data-aos-delay="500"
@@ -209,7 +209,7 @@ const DetailedProject = () => {
                   {language === "BR" ? (
                     <>
                       <h2
-                        className="font-bold text-[#f5f4f4] text-[.9rem] lg:text-[1.5vw]"
+                        className="font-bold text-[#f5f4f4] text-[1rem] lg:text-[1.5vw]"
                         data-aos="fade-up"
                         data-aos-duration="1500"
                       >
@@ -242,7 +242,7 @@ const DetailedProject = () => {
                         {project.builtWith.map((tech, id) => (
                           <span
                             key={id}
-                            className="block text-[#a5a4a7] text-[1rem] lg:text-[1vw] "
+                            className="block text-[#a5a4a7] text-[.8rem] lg:text-[1vw] "
                             data-aos="fade-up"
                             data-aos-duration="1500"
                             data-aos-delay="500"

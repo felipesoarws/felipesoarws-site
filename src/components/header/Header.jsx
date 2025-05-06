@@ -54,7 +54,7 @@ const Header = ({ path, setLang }) => {
   };
 
   return (
-    <header className="fixed bg-[rgba(17,17,17,0.62)] flex flex-row justify-between backdrop-blur-[8.6px] border rounded-2xl border-solid border-[rgba(17,17,17,0.3)] z-[1000] top-0 w-[100%] py-[1.2rem] px-[2rem] translate-x-[-1.7rem] lg:w-[45vw] lg:translate-x-[-1.7vw] lg:py-[1.2vw] lg:px-[2vw] ">
+    <header className="fixed bg-[rgba(17,17,17,0.62)] flex flex-row justify-between backdrop-blur-[8.6px] border rounded-2xl border-solid border-[rgba(17,17,17,0.3)] z-[1000] top-0 w-[100%] py-[.8rem] px-[2rem] translate-x-[-1.7rem] lg:w-[45vw] lg:translate-x-[-1.7vw] lg:py-[1.2vw] lg:px-[2vw] ">
       <nav>
         <ul data-aos="fade-down" data-aos-duration="1900">
           <li className={`${path === "detailedProject" ? "block" : "hidden"} `}>
@@ -64,7 +64,7 @@ const Header = ({ path, setLang }) => {
                 color="#f5f4f4"
                 size={30}
                 strokeWidth={1.5}
-                className="transition-all duration-[.3s] ease-in-out scale-1 lg:translate-x-[-1vw] hover:scale-110"
+                className="transition-all duration-[.3s] ease-in-out scale-1 translate-x-[-1rem] lg:translate-x-[-1vw] hover:scale-110"
               />
             </Link>
           </li>
