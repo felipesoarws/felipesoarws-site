@@ -1,21 +1,15 @@
+# About the Project
 
-# Portifolio
+This is a portfolio created to present my projects, skills and achievements in an organized and visually appealing way.
 
-Portfolio created to present my projects, skills and achievements in an organized and visually appealing way.
-
-
-## Demonstration
+## Live Preview
 
 <a href="https://felipesoarws.vercel.app/">Check here</a>
 
+## 🚀 About Me
 
-## 🚀 About me
-I am a developer focused on the front-end area and with skills and knowledge in HTML, s(CSS), JavaScript, React and Tailwind, in addition to currently deepening my knowledge in TypeScript and Node.
+I am a developer focused on the front-end area and with skills and knowledge in HTML, CSS, SCSS, JavaScript, React and Tailwind, in addition to currently deepening my knowledge in TypeScript, Next.js and other stuffs.
 
+## Stacks Used
 
-## Stack used
-
-**Front-end:** React, TalwindCSS, JavaScript
-
-
-
+**Front-end:** React (w/ JavaScript) & TailwindCSS.
